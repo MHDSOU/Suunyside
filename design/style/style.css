@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(70, 192, 252);
+  align-items: center;
+  padding: 1rem;
+}
+
+#nav img {
+  height: 20px;
+}
+
+#nav-link-container {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+#nav-link-container a {
+  color: white;
+  font-weight: 400;
+}
+
+#nav-link-container button {
+  padding: 12px 20px;
+  border-radius: 32px;
+  border: 0;
+}
+
+#main {
+  background-color: rgb(70, 192, 252);
+  height: 28.125rem;
+}
+
+#main h1 {
+  text-align: center;
+  padding-top: 3rem;
+  color: white;
+  font-size: 3.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+
+.info-section {
+  display: flex;
+  align-items: center;
+}
+
+.info-section img {
+  width: 100%;
+}
+
+.info-section-text {
+  flex: 1;
+}
+
+.info-section-text > div {
+  width: 60%;
+  padding-left: 5.5rem;
+}
+
+.info-section-text h3 {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.info-section-text p {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.info-section-img {
+  flex: 1;
+}
+
+.learn-btn {
+  color: black;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-shadow: 10px 10px 8px #e2d81f;
+}
+
+.red-shadow {
+  text-shadow: 10px 10px 8px #bd2f55;
+}
+
+.rev {
+  flex-direction: row-reverse;
+}

@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(70, 192, 252);
+  align-items: center;
+  padding: 1rem;
+}
+
+#nav img {
+  height: 20px;
+}
+
+#nav-link-container {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+#nav-link-container a {
+  color: white;
+  font-weight: 400;
+}
+
+#nav-link-container button {
+  padding: 12px 20px;
+  border-radius: 32px;
+  border: 0;
+}
+
+#main {
+  background-color: rgb(70, 192, 252);
+  height: 28.125rem;
+}
+
+#main h1 {
+  text-align: center;
+  padding-top: 3rem;
+  color: white;
+  font-size: 3.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+
+.info-section {
+  display: flex;
+  align-items: center;
+}
+
+.info-section img {
+  width: 100%;
+  height: 100%;
+}
+
+.info-section-text {
+  flex: 1;
+}
+
+.info-section-text > div {
+  width: 60%;
+  padding-left: 5.5rem;
+}
+
+.info-section-text h3 {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.info-section-text p {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.info-section-img {
+  flex: 1;
+}
+
+.learn-btn {
+  color: black;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-shadow: 10px 10px 8px #e2d81f;
+}
+
+.red-shadow {
+  text-shadow: 10px 10px 8px #bd2f55;
+}
+
+.rev {
+  flex-direction: row-reverse;
+}
+
+.graphic-design-container {
+  display: flex;
+}
+
+.graphic-design-container div {
+  flex: 1;
+  max-height: 26rem;
+  padding-top: 18rem;
+}
+
+#first-design {
+  background-image: url(../images/desktop/image-graphic-design.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#second-design {
+  background-image: url(../images/desktop/image-photography.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.graphic-text {
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  color: teal;
+}
+
+.graphic-text h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.graphic-text p {
+  width: 55%;
+  text-align: center;
+  font-weight: 600;
+}
+
+#feedback-container {
+}
+
+#feedback-container h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #c4c4c4;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.card img {
+  height: 3.75rem;
+  width: 3.75rem;
+  border-radius: 50%;
+}
+
+.card > p {
+  width: 80%;
+}
+
+.img-container {
+  display: flex;
+}
+
+.img-container div {
+  display: flex;
+  width: 50%;
+}
+
+.img-container img {
+  width: 50%;
+  height: 100%;
+}
+
+#footer {
+  background-color: rgb(17, 137, 137);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#footer > img {
+  height: 30px;
+}
+
+#footer-link-container {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+#footer-link-container a {
+  color: #023f3f;
+  font-weight: 800;
+}
+
+#footer-social-link-container {
+  padding-top: 1rem;
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  #nav-link-container {
+    display: none;
+  }
+  .info-section {
+    flex-direction: column-reverse;
+  }
+  .info-section-text {
+    padding: 2rem 0;
+  }
+
+  .graphic-design-container {
+    flex-direction: column;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .img-container {
+    flex-direction: column;
+  }
+
+  .img-container div {
+    width: 100%;
+  }
+
+  .img-container img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+
+  .info-section-text {
+    padding: 2rem 0;
+  }
+}
